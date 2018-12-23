@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logb4"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/im1" />
+
+
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/bp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <EditText
+            android:id="@+id/account1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:hint="@string/account_hint"
+            android:inputType="text"
+            android:padding="2dp" />
+
+        <EditText
+            android:id="@+id/pass0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="2dp" />
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:padding="2dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rega"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userInfo"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/loginbt"
+        android:text="注册"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/retu"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/regbt"
+        android:text="返回登录界面"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+</RelativeLayout>
